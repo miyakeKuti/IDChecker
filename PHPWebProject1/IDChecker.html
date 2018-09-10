@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset ="UTF-8">
+        <title>フォームからデータを受け取る</title>
+        <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+    </head>
+    <body>
+        <h1>フォームデータの送信</h1>
+        <form action ="http://localhost:46592/?XDEBUG_SESSION_START=9F038C44\index.php"method="post">
+            <div>
+                検索データda:<input type="text" id="tData"><br/>
+            </div>
+            <div>
+                検索ファイル:<input type="text" id="tFile" value="TestData.csv"><br/>
+            </div>
+            
+            <input type="submit" value="検索">
+
+            <!--javaScript-->
+            <script src=test.js></script>
+
+
+
+            
+        </form>
+    </body>
