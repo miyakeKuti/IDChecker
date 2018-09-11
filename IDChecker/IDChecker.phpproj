@@ -1,8 +1,8 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Name>PHPWebProject1</Name>
-    <ProjectGuid>{6ef439e4-b365-455c-a597-c6671bf80008}</ProjectGuid>
+    <Name>IDChecker</Name>
+    <ProjectGuid>{1c9218e2-2bc0-49bf-8d0e-0b86af49132b}</ProjectGuid>
     <RootNamespace>
     </RootNamespace>
     <OutputType>Library</OutputType>

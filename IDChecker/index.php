@@ -16,6 +16,8 @@ $m_ui   =new UI;
 
 //ファイル読み込み
 $m_file->Load($_POST["tFile"]);
+$hoge=$_POST["tFile"];
+
 $m_g->Br(3);
 
 //データ分割

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "PHPWebProject1", "..\..\..\..\..\users\miyake\source\repos\PHPWebProject1\PHPWebProject1\PHPWebProject1.phpproj", "{6EF439E4-B365-455C-A597-C6671BF80008}"
+Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "IDChecker", "..\..\..\..\Users\miyake\Documents\IDChecker\IDChecker\IDChecker.phpproj", "{1C9218E2-2BC0-49BF-8D0E-0B86AF49132B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +11,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6EF439E4-B365-455C-A597-C6671BF80008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6EF439E4-B365-455C-A597-C6671BF80008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C9218E2-2BC0-49BF-8D0E-0B86AF49132B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C9218E2-2BC0-49BF-8D0E-0B86AF49132B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {137C1F91-025E-4646-84B5-1678F9CC4C25}
+		SolutionGuid = {69F1A0B4-76DD-4613-8C6D-8DC9B2AD4315}
 	EndGlobalSection
 EndGlobal
