@@ -39,3 +39,15 @@ class UI{
 
 
 }
+
+
+class Debug{
+
+    public function D_ServerDetail()
+    {
+       
+        print "<PRE>";
+        print_r($_SERVER);
+        print "</PRE>";
+    }
+}

@@ -105,7 +105,7 @@ class LoadFile{
             for($j=0;$j<count($this->csvList[$this->GetHitRow($i)]);$j++)//該当データの属する行の列分
             {
                 $tmpLine[]
-                    =$this->GetCSVData()[$this->GetHitRow($i)][$j];
+                    =$this->GetCSVData()[$this->GetHitLine($i)][$j];
             }
             $this->hitLineData[]=$tmpLine;
         }
