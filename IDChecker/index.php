@@ -7,6 +7,7 @@ include __DIR__.'\Lib\Generic.php';
 //OneOff
 include __DIR__."\OneOff\UI.php";
 
+$m_test='phpのデータです';
 
 $m_file =new LoadFile;
 $m_g    =new Generic;
