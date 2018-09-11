@@ -2,37 +2,39 @@
 <html lang="ja">
     <head>
         <meta charset ="UTF-8">
-        <title>フォームからデータを受け取る</title>
+        <title>IDChecker</title>
         <!-- jQueryの読み込み -->
         <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
     </head>
     <body>
+        
         <h1>フォームデータの送信</h1>
+        
         <form action ="http://localhost:24576/?XDEBUG_SESSION_START=5DFA3D08\index.php" method="post">
             <div>
-                検索データda:<input type="text" name="tData"><br/>
+                検索データ:<input type="text" id="ID_tData"><br/>
             </div>
             <div>
-                検索ファイル:<input type="text" name="tFile" value="TestData.csv"><br/>
+                検索ファイル:<input type="text" id="ID_tFile" value="TestData.csv"><br/>
             </div>
-            
-            <input type="submit" value="検索">
 
         </form>
 
         <form>
+
             <!--javaScript-->
             <script src=test.js></script>
 
+            <!-- 検索（inputされた内容をPHPに送信） -->
             <div>
-                <button type="button" id="testJS">test中</button>
+                <button type="button" id="ID_button">検索</button>
             </div>
-          
+
+            <!-- PHPから受け取った結果を表示 -->
             <div>
-                <button type="button" id="buttonID">PHPtest中</button>
+                <p id="ID_result"></p>
             </div>
-           
-            
+
         </form>
 
     </body>

@@ -19,7 +19,6 @@ class LoadFile{
     {
 
         //Lib階層までの絶対パスになるので、一階層上にあげている
-        $hoge=__DIR__."\..\Res"."\\".$_fileName;
         $this->fileData = file_get_contents(__DIR__."\..\Res"."\\".$_fileName);
 
         //BOMデータの削除

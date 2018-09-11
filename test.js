@@ -1,53 +1,19 @@
-//ブラウザに文字表示
-document.write("sample\n");
-
- //クリックイベントテスト
- $(function()
- {
-     $('#testJS').click(function()
-     {
-         $(this).text("クリックされました。");
-     });
- });
-
-
- //マウスオーバーイベント
- $(function()
- {
-    $('#testJS').mouseover(function()
-    {
-        $(this).text("マウスが上に乗りました。");
-        $(this).css('cursor','wait');
-        $(this).css('font-size', '+=8');
-    });
- });
-
-
- //マウスアウトイベント
- $(function()
- {
-    $('#testJS').mouseout(function()
-    {
-        $(this).text("マウスが外れました。");
-        $(this).css('font-size', '-=8');
-    });
- });
-
- 
  //phpからデータを取得
  $(function()
  {
-     $("#buttonID").click(
+     $("#ID_button").click(
          function()
          {
 
-            //$(this).text("クリックされたZEEEEE");
+            //formの要素を受け取る
+            var $inputTFData=$('#ID_tData');
+            var $inputTFile=$('#ID_tFile');
 
              //phpからのデータを受け取る
-            $.get(
-            'http://localhost:24576/?XDEBUG_SESSION_START=5DFA3D08\index.php',                    //url
-            {hoge:"共有のデータ"},
-            function(data,testStatus)       //phpからのデータを受け取る
+            $.post(
+            'http://localhost:24576/?XDEBUG_SESSION_START=5DFA3D08\index.php'   ,                    //url
+            {tData:$inputTFData.val(),tFile:$inputTFile.val()}                  ,                    //(PHPに)送信データ
+            function(_data,_testStatus)                                                                //phpからのコールバック（PHPでechoしたものが返ってくる）
             {
                 //通信成功
                 // if(testStatus=='success')
@@ -55,9 +21,9 @@ document.write("sample\n");
                 //     $('#GetPHP').text('読み込み成功');
                 // }
                 // else $('#GetPHP').text('読み込み失敗');
-                 $('#buttonID').html(data);
+                 $('#ID_result').html(_data);
                 
-                //$("#buttonID").text(data);
+                //$("#ID_button").text(data);
             } );
             
 
