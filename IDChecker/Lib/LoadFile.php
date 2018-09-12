@@ -42,7 +42,7 @@ class LoadFile{
     }
 
     //@指定ディレクトリにあるファイル名をすべて取得
-    public function LoadFileList($_fileExtension=NULL)
+    public function LoadFileName($_fileExtension=NULL)
     {
         foreach(glob(__DIR__."\..\Res\*".$_fileExtension)as $it_file)
         {
