@@ -1,14 +1,21 @@
 //============================
 //イベント
 //============================
+
+//常時
 $(document).ready(
     function()
     {
 
-        FormExtend('#ID_tData');
-        FormExtend('#ID_tFile');
+        Form_Extend('#ID_tData');
+        Form_Extend('#ID_tFile');
+
+        Form_AutoSelect('#ID_tData');
+        Form_AutoSelect('#ID_tFile');
     }
 );
+
+
 
 
 //=============================
@@ -16,7 +23,7 @@ $(document).ready(
 //=============================
 
 //@formの機能を拡張した関数
-function FormExtend(_id)
+function Form_Extend(_id)
 {
     var defo_col    ={color:'#cccccc'};
     var focus_col   ={color:'#000000'};
@@ -57,4 +64,13 @@ function FormExtend(_id)
 
 }
 
- //スクリプトエラーが出てる模様
+//formにマウスカーソルを当てる自動で選択状態に
+function Form_AutoSelect(_id)
+{
+    $(_id).mouseover(
+        function()
+        {
+            $(this).select();
+        }
+    );
+}
