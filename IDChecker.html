@@ -3,31 +3,35 @@
     <head>
         <meta charset ="UTF-8">
         <title>IDChecker</title>
-        <!-- jQueryの読み込み -->
-        <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+        <!-- javaScript外部ファイル読み込み -->
+        <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>    <!-- jQueryの読み込み -->
+        <script src="JavaScript\CSVSearch.js"></script>
+        <script src="JavaScript\FormAppearance.js"></script>
+
     </head>
     <body>
         
         <h1>フォームデータの送信</h1>
         
-        <form>
+        <form> 
             <div>
                 検索データ:<input type="text" id="ID_tData"><br/>
             </div>
             <div>
-                検索ファイル:<input type="text" id="ID_tFile" value="TestData.csv"><br/>
+                検索ファイル:<input type="text" id="ID_tFile" name="ID_tFile" value="TestData.csv"><br/>
             </div>
 
         </form>
 
         <form>
 
-            <!--javaScript-->
-            <script src=JavaScript\CSVSearch.js></script>
-
             <!-- 検索（inputされた内容をPHPに送信） -->
             <div>
                 <button type="button" id="ID_button">検索</button>
+            </div>
+
+            <div>
+                <button type="button" id="ID_Test">Test用</button>
             </div>
 
             <!-- PHPから受け取った結果を表示 -->
