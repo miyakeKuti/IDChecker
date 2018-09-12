@@ -1,4 +1,51 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Anton|Noto+Serif+JP');
+
+/*ページ全体の設定*/
+body
+{
+    background-color: rgb(34, 34, 34);
+    color: rgb(230, 230, 230);
+}
+ 
+header
+{
+    background-color: rgb(18, 18, 34);
+    padding: 2px;
+    color: dimgray;
+    border-radius: 10px;
+}
+
+.container
+{
+    margin: 0 200px;
+    min-width: 200px;
+    box-shadow: 0 0 10px #1a475c;
+}
+
+h1
+{
+    margin: 0;
+    font-size: 24px;
+    font-style: oblique;
+    font-family: 'Anton', sans-serif;/*Webフォントを使用*/
+    text-align: center;
+}
+
 p
 {
     font-size: 14px;
 }
+
+/*debug用body全体を囲っている*/
+.Debug
+{
+    /* background-color: rgb(204, 43, 43); */
+    width: 600px;
+    /* border: 1px double #1a475c; */
+
+    margin: auto auto;
+    padding: 30px;
+    /*padding-top: 2px;*/
+}
+

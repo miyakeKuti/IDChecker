@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
 
-        <meta charset ="UTF-8">
-        <title>IDChecker</title>
-        <!-- javaScriptのファイル読み込み -->
-        <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>    <!-- jQueryの読み込み -->
-        <script src="JavaScript\CSVSearch.js"></script>
-        <script src="JavaScript\FormAppearance.js"></script>
-        <!-- cssファイルの読み込み -->
-        <link rel="stylesheet" href="CSS/Test.css">
+<head>
 
-    </head>
-    <body>
-        
-        <h1>データベース検索ツール</h1>
-        
-        <form> 
+    <meta charset="UTF-8">
+    <title>IDChecker</title>
+    <!-- javaScriptのファイル読み込み -->
+    <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script> <!-- jQueryの読み込み -->
+    <script src="JavaScript\CSVSearch.js"></script>
+    <script src="JavaScript\FormAppearance.js"></script>
+    <!-- cssファイルの読み込み -->
+    <link rel="stylesheet" href="CSS/Test.css">
+
+</head>
+
+<div class="container">
+    <header>
+        <h1>IDChecker</h1>
+    </header>
+
+</div>
+
+<body>
+    <div class="Debug">
+
+        <form>
             <div>
-                検索データ:<input type="text" id="ID_tData" value="ex) targetData">
-                検索ファイル:<input type="text" id="ID_tFile" value="ex) File.csv"><br/>
+                <p>
+                    <label for="ID_tData">検索データ</label>
+                    <input type="text" id="ID_tData" value="ex) targetData">
+
+                    <label for="ID_tFile">検索ファイル</label>
+                    <input type="text" id="ID_tFile" value="ex) File.csv">
+                </p>
             </div>
 
         </form>
@@ -30,7 +43,7 @@
             <div>
                 <button type="button" id="ID_button">検索</button>
             </div>
-            
+
             <!-- PHPから受け取った結果を表示 -->
             <div>
                 <p id="ID_result"></p>
@@ -38,4 +51,5 @@
 
         </form>
 
-    </body>
+    </div>
+</body>
